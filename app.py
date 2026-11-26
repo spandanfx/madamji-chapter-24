@@ -76,10 +76,20 @@ div[data-testid="stSidebarCollapseButton"] {
     overflow-x: hidden;
 }
 
-/* Container Spacing Optimized for Pixel 9a & Mobile */
+/* Streamlit Cloud Header Adjustments */
+header[data-testid="stHeader"] {
+    background: rgba(11, 9, 12, 0.75) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+div[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+/* Container Spacing - Clears Streamlit Cloud Header & Prevents Any Cutoff */
 .block-container {
-    padding-top: 1rem !important;
-    padding-bottom: 3.5rem !important;
+    padding-top: 4.8rem !important;
+    padding-bottom: 5.5rem !important;
     padding-left: 0.85rem !important;
     padding-right: 0.85rem !important;
     max-width: 950px !important;
@@ -285,7 +295,8 @@ div.stButton > button:hover {
     .block-container {
         padding-left: 0.65rem !important;
         padding-right: 0.65rem !important;
-        padding-top: 0.8rem !important;
+        padding-top: 4.4rem !important;
+        padding-bottom: 5.5rem !important;
     }
     .profile-grid {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -329,7 +340,7 @@ div.stButton > button:hover {
 
 # ----------------- TOP NAVBAR -----------------
 st.markdown("""
-<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 5px;">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 6px; margin-bottom: 12px;">
     <span class="netflix-logo">NETFLIX</span>
     <span class="netflix-badge">ORIGINAL SPECIAL</span>
 </div>
